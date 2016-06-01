@@ -1,1 +1,22 @@
-<h1>xuchao</h1>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>课堂练习2</title>
+<script type="text/javascript">
+function addItem(){
+ var menuUL = document.getElementById("menuUL");
+ var li = menuUL.firstElementChild.cloneNode(true);
+ menuUL.appendChild(li);
+}
+</script>
+</head>
+
+<body>
+	<input type="button" value="新增" onclick="addItem()"/>
+    <ul id="menuUL">
+     	<li><input type="text" value="请输入内容" /></li>
+    </ul>
+</body>
+</html>
